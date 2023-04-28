@@ -47,12 +47,8 @@ int convolve(matrix_t *a_matrix, matrix_t *b_matrix, matrix_t **output_matrix) {
             }
             out[c] = x;
             c++;
-            //printf("%d", x);
-            //printf(", ");
         }
-    }
-    //printf("\n");
-        
+    }   
     return 0;
 }
 
