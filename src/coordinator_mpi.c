@@ -33,7 +33,7 @@
         int32_t message;
 
         // TODO: loop until we've completed `numTasks`
-        while (nextTask <= numTasks) {
+        while (nextTask < numTasks) {
             // TODO: receive a message from any source (so we know that this node is done with its task)
             MPI_Recv(&message, 1, MPI_INT32_T, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, &status);
             // TODO: get the source process using the `status` struct
